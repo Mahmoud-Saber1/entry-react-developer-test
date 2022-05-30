@@ -1,0 +1,92 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+/* Start Variables */
+:root {
+  --c-primary: #5ece7b;
+  --c-text: #1d1f22;
+  --c-white: #ffffff;
+  --product-card-box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+  --overlay: #39374838;
+  --active-select: #eeeeee;
+  --section-padding: 60px;
+  --main-background: #fff;
+  --main-trans: 0.5s;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--main-background);
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Category Names */
+.categorys {
+  padding-bottom: var(--section-padding);
+  min-height: calc(100vh - 80px);
+}
+
+.category-name {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--c-primary);
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.product {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  min-height: calc(100vh - 80px);
+}
